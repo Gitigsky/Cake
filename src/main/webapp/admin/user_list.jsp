@@ -41,7 +41,7 @@
 	</tr>
 
 
-		<c:forEach items="${p.list }" var="u">
+		<c:forEach items="${p.list}" var="u">
 			<tr>
 				<td><p>${u.id }</p></td>
 				<td><p>${u.username }</p></td>
