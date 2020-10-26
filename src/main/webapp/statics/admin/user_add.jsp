@@ -14,7 +14,7 @@
 
 
 
-	<jsp:include page="/admin/header.jsp"></jsp:include>
+	<jsp:include page="/statics/admin/header.jsp"></jsp:include>
 	<c:if test="${!empty failMsg }">
 		<div class="alert alert-danger">${failMsg }</div>
 	</c:if>

@@ -12,7 +12,7 @@
 <body>
 <div class="container-fluid">
 
-	<jsp:include page="/admin/header.jsp"></jsp:include>
+	<jsp:include page="/statics/admin/header.jsp"></jsp:include>
 
 	<br>
 
@@ -44,7 +44,7 @@
 				<td><p>${t.id }</p></td>
 				<td><p>${t.name }</p></td>
 				<td>
-					<a class="btn btn-primary" href="/admin/type_edit.jsp?id=${t.id }&name=${t.encodeName }">修改</a>
+					<a class="btn btn-primary" href="/statics/admin/type_edit.jsp?id=${t.id }&name=${t.encodeName }">修改</a>
 					<a class="btn btn-danger" href="/admin/type_delete?id=${t.id }">删除</a>
 				</td>
 			</tr>

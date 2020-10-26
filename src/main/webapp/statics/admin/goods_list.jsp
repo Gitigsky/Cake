@@ -11,9 +11,9 @@
 <body>
 <div class="container-fluid">
 
-	<jsp:include page="/admin/header.jsp"></jsp:include>
+	<jsp:include page="/statics/admin/header.jsp"></jsp:include>
 
-	<div class="text-right"><a class="btn btn-warning" href="/admin/goods_add.jsp">添加商品</a></div>
+	<div class="text-right"><a class="btn btn-warning" href="/statics/admin/goods_add.jsp">添加商品</a></div>
 
 	<br>
 

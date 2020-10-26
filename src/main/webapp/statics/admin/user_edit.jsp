@@ -12,7 +12,7 @@
 <body>
 <div class="container-fluid">
 
-	<jsp:include page="/admin/header.jsp"></jsp:include>
+	<jsp:include page="/statics/admin/header.jsp"></jsp:include>
 
 	<br><br>
 
