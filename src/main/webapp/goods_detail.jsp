@@ -93,7 +93,7 @@
 	<div class="related-products">
 		<div class="container">
 			<h3>猜你喜欢</h3>
-			<div class="product-cn.daogao.model-sec single-product-grids">
+			<div class="product-cn.dangao.model-sec single-product-grids">
 				<div class="product-grid single-product">
 					<a href="single.html">
 					<div class="more-product"><span> </span></div>						
