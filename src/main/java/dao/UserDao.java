@@ -10,7 +10,7 @@ import utils.DBUtil;
 import java.sql.SQLException;
 import java.util.List;
 
-public class UserDao {
+public class UserDao{
     public void addUser(User user) throws SQLException {
         QueryRunner r = new QueryRunner(DBUtil.getDataSource());
         String sql = "insert into user(username,email,password,name,phone,address,isadmin,isvalidate) values(?,?,?,?,?,?,?,?)";
