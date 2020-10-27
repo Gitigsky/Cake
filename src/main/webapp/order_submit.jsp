@@ -7,12 +7,12 @@
 	<title>支付</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="layer/layer.js"></script>
-	<script type="text/javascript" src="js/cart.js"></script>
+	<link type="text/css" rel="stylesheet" href="/statics/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/style.css">
+	<script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/statics/layer/layer.js"></script>
+	<script type="text/javascript" src="/statics/js/cart.js"></script>
 </head>
 <body>
 	
@@ -59,7 +59,7 @@
 					<label>
 						<div class="thumbnail">
 							<input type="radio" name="paytype" value="1" checked="checked" />
-							<img src="images/wechat.jpg" alt="微信支付">
+							<img src="/statics/images/wechat.jpg" alt="微信支付">
 						</div>
 					</label>
 				</div>
@@ -67,7 +67,7 @@
 					<label>
 						<div class="thumbnail">
 							<input type="radio" name="paytype" value="2"  />
-							<img src="images/alipay.jpg" alt="支付宝支付">
+							<img src="/statics/images/alipay.jpg" alt="支付宝支付">
 						</div>
 					</label>
 				</div>
@@ -75,7 +75,7 @@
 					<label>
 						<div class="thumbnail">
 							<input type="radio" name="paytype" value="3"  />
-							<img src="images/offline.jpg" alt="货到付款">
+							<img src="/statics/images/offline.jpg" alt="货到付款">
 						</div>
 					</label>
 				</div>
