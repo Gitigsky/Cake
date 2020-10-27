@@ -35,7 +35,7 @@ public class AdminUserAddServlet extends HttpServlet {
         }else {
             request.setAttribute("failMsg", "用户名或邮箱重复，请重新填写！");
             request.setAttribute("u",user);
-            request.getRequestDispatcher("/admin/user_add.jsp").forward(request, response);
+            request.getRequestDispatcher("/statics/admin/user_add.jsp").forward(request, response);
         }
     }
 }

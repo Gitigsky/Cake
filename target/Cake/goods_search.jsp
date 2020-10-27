@@ -8,13 +8,14 @@
 	<title>首页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/simpleCart.min.js"></script>
-	<script type="text/javascript" src="layer/layer.js"></script>
-	<script type="text/javascript" src="js/cart.js"></script>
+	<link type="text/css" rel="stylesheet" href="/statics/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/style.css">
+	<script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/statics/js/simpleCart.min.js"></script>
+	<script type="text/javascript" src="/statics/layer/layer.js"></script>
+
+	<script type="text/javascript" src="/statics/js/cart.js"></script>
 </head>
 <body>
 
@@ -36,7 +37,7 @@
 					<a href="${pageContext.request.contextPath }/goods_detail?id=${g.id}">
 						<div class="more-product"><span> </span></div>
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="${pageContext.request.contextPath }${g.cover}" class="img-responsive" alt="${g.name }" width="240" height="240">
+							<img src="${pageContext.request.contextPath }/statics${g.cover}" class="img-responsive" alt="${g.name }" width="240" height="240">
 							<div class="b-wrapper">
 								<h4 class="b-animate b-from-left  b-delay03">
 									<button>查看详情</button>

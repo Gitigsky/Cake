@@ -6,7 +6,7 @@
 <head>
 	<title>重置密码</title>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="/statics/css/bootstrap.css"/>
 </head>
 <body>
 <div class="container-fluid">
@@ -15,7 +15,7 @@
 
 	<br><br>
 
-	<form class="form-horizontal" action="/admin/user_reset" method="post">
+	<form class="form-horizontal" action="/statics/admin/user_reset" method="post">
 		<input type="hidden" name="id" value="${param.id }">
 		<div class="form-group">
 			<label for="input_name" class="col-sm-1 control-label">用户名</label>

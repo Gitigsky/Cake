@@ -48,7 +48,7 @@ public class AdminGoodsListServlet extends HttpServlet {
         }
         request.setAttribute("p", p);
         request.setAttribute("type", type);
-        request.getRequestDispatcher("/admin/goods_list.jsp").forward(request, response);
+        request.getRequestDispatcher("/statics/admin/goods_list.jsp").forward(request, response);
     }
 
     /**

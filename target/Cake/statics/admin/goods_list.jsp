@@ -6,7 +6,7 @@
 <head>
 	<title>商品列表</title>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="/statics/css/bootstrap.css"/>
 </head>
 <body>
 <div class="container-fluid">
@@ -45,7 +45,7 @@
 		<c:forEach items="${p.list }" var="g">
 			<tr>
 				<td><p>${g.id }</p></td>
-				<td><p><a href="/goods_detail?id=${g.id}" target="_blank"><img src="${g.cover}" width="100px" height="100px"></a></p></td>
+				<td><p><a href="/goods_detail?id=${g.id}" target="_blank"><img src="/statics${g.cover}" width="100px" height="100px"></a></p></td>
 				<td><p><a href="/goods_detail?id=${g.id}" target="_blank">${g.name}</a></p></td>
 				<td><p>${g.intro}</p></td>
 				<td><p>${g.price}</p></td>

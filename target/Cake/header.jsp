@@ -61,7 +61,7 @@
                     </c:choose>
 
                     <c:if test="${!empty user && user.isadmin }">
-                        <li><a href="/admin/index.jsp" target="_blank">后台管理</a></li>
+                        <li><a href="/statics/admin/index.jsp" target="_blank">后台管理</a></li>
                     </c:if>
                 </ul>
                 <!--/.navbar-collapse-->

@@ -8,14 +8,14 @@
 	<title>商品详情</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/flexslider.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="layer/layer.js"></script>
-	<script type="text/javascript" src="js/cart.js"></script>
+	<link type="text/css" rel="stylesheet" href="/statics/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/flexslider.css">
+	<script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/statics/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/statics/layer/layer.js"></script>
+	<script type="text/javascript" src="/statics/js/cart.js"></script>
 	<script>
 		$(function() {
 		  $('.flexslider').flexslider({
@@ -26,11 +26,6 @@
 	</script>
 </head>
 <body>
-	 
-	
-
-
-
 
 
 	<!--header-->
@@ -47,17 +42,19 @@
 						
 						<ul class="slides">
 							<li data-thumb="${g.cover}">
-								<div class="thumb-image"> <img src="${g.cover}" data-imagezoom="true" class="img-responsive"> </div>
+								<div class="thumb-image"> <img src="/statics${g.cover}" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
 							<li data-thumb="${g.image1}">
-								 <div class="thumb-image"> <img src="${g.image1}" data-imagezoom="true" class="img-responsive"> </div>
+								 <div class="thumb-image"> <img src="/statics${g.image1}" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
 							<li data-thumb="${g.image2}">
-							   <div class="thumb-image"> <img src="${g.image2}" data-imagezoom="true" class="img-responsive"> </div>
+							   <div class="thumb-image"> <img src="/statics${g.image2}" data-imagezoom="true" class="img-responsive"> </div>
 							</li> 
 						</ul>
 					</div>
-				</div>	
+				</div>
+
+
 				<div class="col-md-4 single-grid simpleCart_shelfItem">		
 					<h3>${g.name}</h3>
 					<div class="tag">

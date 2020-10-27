@@ -8,11 +8,11 @@
 	<title>用户注册</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/simpleCart.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="/statics/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/style.css">
+	<script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/statics/js/simpleCart.min.js"></script>
 </head>
 <body>
 
@@ -69,10 +69,6 @@
 	    </div>
 	</div>
 	<!--//account-->
-
-	
-
-
 
 
 	<!--footer-->

@@ -35,7 +35,7 @@
         <a class="banner_a" href="javascript:;" onclick="buy(${scroll.id})">立刻购买</a>
         <div class="banner-text">
             <a href="/goods_detail?id=${scroll.id}">
-                <img src="${scroll.cover}" alt="${scroll.name}" width="350" height="350">
+                <img src="/statics${scroll.cover}" alt="${scroll.name}" width="350" height="350">
             </a>
         </div>
     </div>
@@ -53,7 +53,7 @@
             <c:forEach items="${hotList}" var="g">
                 <div class="col-md-4 gallery-grid glry-two">
                     <a href="/goods_detail?id=${g.id}">
-                        <img src="${g.cover}" class="img-responsive" alt="${g.name}" width="350" height="350"/>
+                        <img src="/statics${g.cover}" class="img-responsive" alt="${g.name}" width="350" height="350"/>
                     </a>
                     <div class="gallery-info galrr-info-two">
                         <p>

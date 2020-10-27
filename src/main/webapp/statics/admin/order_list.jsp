@@ -6,7 +6,7 @@
 <html>
 <head>
 <title>订单列表</title>
-<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="/statics/css/bootstrap.css"/>
 </head>
 <body>
 <div class="container-fluid">

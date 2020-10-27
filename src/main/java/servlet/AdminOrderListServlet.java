@@ -48,6 +48,6 @@ public class AdminOrderListServlet extends HttpServlet {
         }
 
         request.setAttribute("p", p);
-        request.getRequestDispatcher("/admin/order_list.jsp").forward(request, response);
+        request.getRequestDispatcher("/statics/admin/order_list.jsp").forward(request, response);
     }
 }

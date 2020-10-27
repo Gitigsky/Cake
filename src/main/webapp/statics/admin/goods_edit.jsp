@@ -8,7 +8,7 @@
 <head>
 	<title>商品编辑</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="/statics/css/bootstrap.css" />
 </head>
 <body>
 <div class="container-fluid">
@@ -49,19 +49,19 @@
 		</div>
 		<div class="form-group">
 			<label for="input_file" class="col-sm-1 control-label">封面图片</label>
-			<div class="col-sm-6"><img src="${pageContext.request.contextPath }${g.cover }" width="100" height="100"/>
+			<div class="col-sm-6"><img src="${pageContext.request.contextPath }/statics${g.cover }" width="100" height="100"/>
 				<input type="file" name="cover"  id="input_file">推荐尺寸: 500 * 500
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="input_file" class="col-sm-1 control-label">详情图片1</label>
-			<div class="col-sm-6"><img src="${pageContext.request.contextPath }${g.image1 }" width="100" height="100"/>
+			<div class="col-sm-6"><img src="${pageContext.request.contextPath }/statics${g.image1 }" width="100" height="100"/>
 				<input type="file" name="image1"  id="input_file">推荐尺寸: 500 * 500
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="input_file" class="col-sm-1 control-label">详情图片2</label>
-			<div class="col-sm-6"><img src="${pageContext.request.contextPath }${g.image2 }" width="100" height="100"/>
+			<div class="col-sm-6"><img src="${pageContext.request.contextPath }/statics${g.image2 }" width="100" height="100"/>
 				<input type="file" name="image2"  id="input_file">推荐尺寸: 500 * 500
 			</div>
 		</div>

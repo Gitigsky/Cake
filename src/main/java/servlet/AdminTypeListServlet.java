@@ -22,7 +22,7 @@ public class AdminTypeListServlet extends HttpServlet {
         request.setAttribute("list", list);
 		this.getServletContext().removeAttribute("typeList");
         this.getServletContext().setAttribute("typeList",list);
-        request.getRequestDispatcher("/admin/type_list.jsp").forward(request, response);
+        request.getRequestDispatcher("/statics/admin/type_list.jsp").forward(request, response);
     }
 
     /**

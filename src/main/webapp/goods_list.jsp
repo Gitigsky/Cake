@@ -49,7 +49,7 @@
                     <a href="/goods_detail?id=${g.id}">
                         <div class="more-product"><span> </span></div>
                         <div class="product-img b-link-stripe b-animate-go  thickbox">
-                            <img src="${g.cover}" class="img-responsive" alt="${g.name}" width="240" height="240">
+                            <img src="/statics${g.cover}" class="img-responsive" alt="${g.name}" width="240" height="240">
                             <div class="b-wrapper">
                                 <h4 class="b-animate b-from-left  b-delay03">
                                     <button href="/goods_detail?id=${g.id}">查看详情</button>

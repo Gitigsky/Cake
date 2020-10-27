@@ -20,7 +20,7 @@ public class AdminGoodsEditshowServelt extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Goods g = gService.getGoodsById(id);
         request.setAttribute("g", g);
-        request.getRequestDispatcher("/admin/goods_edit.jsp").forward(request, response);
+        request.getRequestDispatcher("/statics/admin/goods_edit.jsp").forward(request, response);
     }
 
     /**

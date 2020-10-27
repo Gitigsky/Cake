@@ -6,7 +6,7 @@
 <head>
 <title>客户列表</title>
 <meta charset="utf-8"/>
-<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="/statics/css/bootstrap.css"/>
 </head>
 <body>
 <div class="container-fluid">

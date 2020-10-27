@@ -7,7 +7,7 @@
 <head>
 	<title>客户添加</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="/statics/css/bootstrap.css" />
 </head>
 <body>
 <div class="container-fluid">
@@ -19,7 +19,7 @@
 		<div class="alert alert-danger">${failMsg }</div>
 	</c:if>
 	<br><br>
-	<form class="form-horizontal" action="/admin/user_add" method="post">
+	<form class="form-horizontal" action="/statics/admin/user_add" method="post">
 		<div class="form-group">
 			<label for="input_name" class="col-sm-1 control-label">用户名</label>
 			<div class="col-sm-6">

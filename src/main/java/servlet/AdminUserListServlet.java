@@ -43,7 +43,7 @@ public class AdminUserListServlet extends HttpServlet {
             }
         }
         request.setAttribute("p", p);
-        request.getRequestDispatcher("/admin/user_list.jsp").forward(request, response);
+        request.getRequestDispatcher("/statics/admin/user_list.jsp").forward(request, response);
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

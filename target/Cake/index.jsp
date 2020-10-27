@@ -14,12 +14,12 @@
     <title>商品列表</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="layer/layer.js"></script>
-    <script type="text/javascript" src="js/cart.js"></script>
+    <link type="text/css" rel="stylesheet" href="/statics/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="/statics/css/style.css">
+    <script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/statics/layer/layer.js"></script>
+    <script type="text/javascript" src="/statics/js/cart.js"></script>
 </head>
 <body>
 <!--header-->
@@ -35,7 +35,7 @@
         <a class="banner_a" href="javascript:;" onclick="buy(${scroll.id})">立刻购买</a>
         <div class="banner-text">
             <a href="/goods_detail?id=${scroll.id}">
-                <img src="${scroll.cover}" alt="${scroll.name}" width="350" height="350">
+                <img src="/statics${scroll.cover}" alt="${scroll.name}" width="350" height="350">
             </a>
         </div>
     </div>
@@ -53,7 +53,7 @@
             <c:forEach items="${hotList}" var="g">
                 <div class="col-md-4 gallery-grid glry-two">
                     <a href="/goods_detail?id=${g.id}">
-                        <img src="${g.cover}" class="img-responsive" alt="${g.name}" width="350" height="350"/>
+                        <img src="/statics${g.cover}" class="img-responsive" alt="${g.name}" width="350" height="350"/>
                     </a>
                     <div class="gallery-info galrr-info-two">
                         <p>

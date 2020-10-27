@@ -20,6 +20,6 @@ public class AdminUserEditshowServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         User user = uService.selectById(id);
         request.setAttribute("u", user);
-        request.getRequestDispatcher("/admin/user_edit.jsp").forward(request, response);
+        request.getRequestDispatcher("/statics/admin/user_edit.jsp").forward(request, response);
     }
 }
