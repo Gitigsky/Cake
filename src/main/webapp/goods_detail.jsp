@@ -8,14 +8,14 @@
 	<title>商品详情</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/flexslider.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="layer/layer.js"></script>
-	<script type="text/javascript" src="js/cart.js"></script>
+	<link type="text/css" rel="stylesheet" href="/statics/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/statics/css/flexslider.css">
+	<script type="text/javascript" src="/statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/statics/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/statics/layer/layer.js"></script>
+	<script type="text/javascript" src="/statics/js/cart.js"></script>
 	<script>
 		$(function() {
 		  $('.flexslider').flexslider({
