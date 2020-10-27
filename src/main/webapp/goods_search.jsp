@@ -14,6 +14,7 @@
 	<script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/statics/js/simpleCart.min.js"></script>
 	<script type="text/javascript" src="/statics/layer/layer.js"></script>
+
 	<script type="text/javascript" src="/statics/js/cart.js"></script>
 </head>
 <body>

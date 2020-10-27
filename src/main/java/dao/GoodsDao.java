@@ -42,6 +42,7 @@ public class GoodsDao {
         QueryRunner r=new QueryRunner(DBUtil.getDataSource());
         if(typeID==0)
         {
+
             sql="select count(*) from goods";
             return r.query(sql,new ScalarHandler<Long>()).intValue();
         }
