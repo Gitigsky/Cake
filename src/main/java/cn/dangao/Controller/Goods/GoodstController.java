@@ -15,6 +15,8 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.List;
+import java.util.Map;
 
 @Controller
 public class GoodstController {
@@ -22,6 +24,22 @@ public class GoodstController {
     private GoodsService gService;
     @Resource
   private TypeService tService;
+    @RequestMapping("/index")
+    public String index( Model model)
+    {
+        Map<String,Object> ScrollGood=gService.getScrollGood();
+        model.addAttribute("scroll",ScrollGood);
+
+        List<Map<String,Object>> newList=gService.getGoodsList(3);
+        model.addAttribute("newList",newList);
+
+        List<Map<String,Object>>hotList=gService.getGoodsList(2);
+        model.addAttribute("hotList",hotList);
+
+        //response.sendRedirect("index.jsp");
+
+        return "index";
+    }
 
     @RequestMapping("/goodsrecommend_list")
     public String GoodRecommendList(String type, String pageNumber, Model model) {
@@ -184,4 +202,5 @@ public class GoodstController {
          }
          return "goods_search";
      }
+
 }
