@@ -11,7 +11,7 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context.xsd" >
      <!--提供对注解的支持-->
-     <context:component-scan base-package="cn.dangao.Conttloer"/>
+     <context:component-scan base-package="cn.dangao.Controller"/>
 
      <!--配置消息转换器-->
      <mvc:annotation-driven>

@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.User;
+import cn.dangao.entity.User;
 import org.apache.commons.beanutils.BeanUtils;
 import cn.dangao.service.UserService;
 

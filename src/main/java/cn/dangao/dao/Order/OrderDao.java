@@ -1,6 +1,6 @@
-package cn.dangao.dao;
+package cn.dangao.dao.Order;
 
-import cn.dangao.model.*;
+import cn.dangao.entity.*;
 import org.apache.commons.dbutils.*;
 import cn.dangao.utils.*;
 import java.math.*;

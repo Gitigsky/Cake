@@ -1,6 +1,6 @@
 package cn.dangao.filter;
 
-import cn.dangao.model.User;
+import cn.dangao.entity.User;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

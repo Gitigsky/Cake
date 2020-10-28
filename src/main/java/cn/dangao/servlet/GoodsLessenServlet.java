@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Order;
+import cn.dangao.entity.Order;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

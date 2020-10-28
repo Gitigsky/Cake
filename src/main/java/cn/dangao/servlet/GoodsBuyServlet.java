@@ -1,7 +1,7 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Goods;
-import cn.dangao.model.Order;
+import cn.dangao.entity.Goods;
+import cn.dangao.entity.Order;
 import cn.dangao.service.GoodsService;
 
 import javax.servlet.ServletException;
@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "goods_buy",urlPatterns = "/goods_buy")
 public class GoodsBuyServlet extends HttpServlet {
     private GoodsService gService = new GoodsService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

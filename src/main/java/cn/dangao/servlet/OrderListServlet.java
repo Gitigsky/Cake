@@ -1,7 +1,7 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Order;
-import cn.dangao.model.User;
+import cn.dangao.entity.Order;
+import cn.dangao.entity.User;
 import cn.dangao.service.OrderService;
 
 import javax.servlet.ServletException;

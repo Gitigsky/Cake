@@ -1,7 +1,7 @@
 package cn.dangao.service;
 
-import cn.dangao.dao.TypeDao;
-import cn.dangao.model.Type;
+import cn.dangao.dao.Type.TypeDao;
+import cn.dangao.entity.Type;
 
 import java.sql.SQLException;
 import java.util.List;

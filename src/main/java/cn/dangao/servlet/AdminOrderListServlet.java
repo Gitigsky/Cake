@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Page;
+import cn.dangao.entity.Page;
 import cn.dangao.service.OrderService;
 
 import javax.servlet.ServletException;

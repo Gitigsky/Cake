@@ -1,8 +1,8 @@
 package cn.dangao.service;
 
-import cn.dangao.dao.UserDao;
-import cn.dangao.model.Page;
-import cn.dangao.model.User;
+import cn.dangao.dao.User.UserDao;
+import cn.dangao.entity.Page;
+import cn.dangao.entity.User;
 
 import java.sql.SQLException;
 import java.util.List;

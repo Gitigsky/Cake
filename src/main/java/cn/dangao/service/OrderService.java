@@ -1,7 +1,7 @@
 package cn.dangao.service;
 
-import cn.dangao.dao.*;
-import cn.dangao.model.*;
+import cn.dangao.dao.Order.OrderDao;
+import cn.dangao.entity.*;
 import cn.dangao.utils.*;
 
 import java.sql.*;

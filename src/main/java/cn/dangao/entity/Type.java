@@ -1,4 +1,4 @@
-package cn.dangao.model;
+package cn.dangao.entity;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

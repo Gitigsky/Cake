@@ -1,6 +1,6 @@
-package cn.dangao.dao;
+package cn.dangao.dao.Type;
 
-import cn.dangao.model.Type;
+import cn.dangao.entity.Type;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;

@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Page;
+import cn.dangao.entity.Page;
 import cn.dangao.service.GoodsService;
 
 import javax.servlet.ServletException;
@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "goodrecommendList",urlPatterns = "/goodsrecommend_list")
 public class GoodRecommendListServlet extends HttpServlet {
     private GoodsService gService = new GoodsService();
 

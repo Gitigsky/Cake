@@ -1,7 +1,7 @@
 package cn.dangao.servlet;
 
 import cn.dangao.service.GoodsService;
-import cn.dangao.model.*;
+import cn.dangao.entity.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

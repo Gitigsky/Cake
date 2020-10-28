@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Goods;
+import cn.dangao.entity.Goods;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;

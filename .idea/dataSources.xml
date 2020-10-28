@@ -4,8 +4,17 @@
     <data-source source="LOCAL" name="cake@localhost" uuid="6af35a9a-7c24-4433-9914-6a63e6a6269f">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/cake</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="cake@localhost [2]" uuid="d756afc1-34f5-41b0-a588-a17acea48f50">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/cake?serverTimezone=UTC</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="UTC" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

@@ -1,7 +1,7 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Page;
-import cn.dangao.model.Type;
+import cn.dangao.entity.Page;
+import cn.dangao.entity.Type;
 import cn.dangao.service.GoodsService;
 import cn.dangao.service.TypeService;
 
@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "goods_List",urlPatterns = "/goods_list")
 public class GoodsListServlet extends HttpServlet {
     private GoodsService gService=new GoodsService();
     private TypeService tService=new TypeService();
