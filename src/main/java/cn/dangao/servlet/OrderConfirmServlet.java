@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.*;
+import cn.dangao.entity.*;
 import org.apache.commons.beanutils.BeanUtils;
 import cn.dangao.service.OrderService;
 

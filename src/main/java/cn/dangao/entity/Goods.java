@@ -1,4 +1,4 @@
-package cn.dangao.model;
+package cn.dangao.entity;
 
 public class Goods {
 	private int id;

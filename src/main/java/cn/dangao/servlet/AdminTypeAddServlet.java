@@ -1,6 +1,6 @@
 package cn.dangao.servlet;
 
-import cn.dangao.model.Type;
+import cn.dangao.entity.Type;
 import cn.dangao.service.TypeService;
 
 import javax.servlet.ServletException;

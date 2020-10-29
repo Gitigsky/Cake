@@ -1,15 +1,20 @@
 package cn.dangao.service;
 
-import cn.dangao.dao.GoodsDao;
-import cn.dangao.model.Goods;
-import cn.dangao.model.Page;
+import cn.dangao.dao.Goods.GoodsDao;
+import cn.dangao.entity.Goods;
+import cn.dangao.entity.Page;
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
-
+@Service
 public class GoodsService {
-    private GoodsDao gDao=new GoodsDao();
+
+    @Resource
+   private GoodsDao gDao;
     public List<Map<String,Object>> getGoodsList(int recommendType) {
         List<Map<String,Object>> list=null;
         try {
@@ -33,7 +38,7 @@ public class GoodsService {
     {
         List<Goods> list=null;
         try {
-            list=gDao.selectGoodsByTypeID(typeID,pageNumber,pageSize);
+            list=gDao.selectGoodsByTypeID(typeID,(pageNumber-1)*pageSize,pageSize);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -53,7 +58,7 @@ public class GoodsService {
 
         List list=null;
         try {
-            list=gDao.selectGoodsByTypeID(typeID,pageNumber,8);
+            list=gDao.selectGoodsByTypeID(typeID,(pageNumber-1)*8,8);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -74,11 +79,11 @@ public class GoodsService {
         p.SetPageSizeAndTotalCount(8, totalCount);
         List list=null;
         try {
-            list = gDao.selectGoodsbyRecommend(type, pageNumber, 8);
+            list = gDao.selectGoodsbyRecommend(type,(pageNumber-1)*8, 8);
             for(Goods g : (List<Goods>)list) {
-                g.setScroll(gDao.isScroll(g));
-                g.setHot(gDao.isHot(g));
-                g.setNew(gDao.isNew(g));
+                g.setScroll(gDao.isRecommend(g,1)==null?false:true);
+                g.setHot(gDao.isRecommend(g,2)==null?false:true);
+                g.setNew(gDao.isRecommend(g,3)==null?false:true);
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block
@@ -88,9 +93,11 @@ public class GoodsService {
         return p;
     }
     public Goods getGoodsById(int id) {
+
         Goods g=null;
         try {
             g = gDao.getGoodsById(id);
+
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -112,7 +119,7 @@ public class GoodsService {
         List list=null;
         try {
 //			list = gDao.selectGoods(keyword, pageNo, 8);
-            list = gDao.selectSearchGoods(keyword,pageNumber,8);
+            list = gDao.selectSearchGoods(keyword,(pageNumber-1)*8,8);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

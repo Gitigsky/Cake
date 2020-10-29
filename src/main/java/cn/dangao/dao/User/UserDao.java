@@ -1,6 +1,6 @@
-package cn.dangao.dao;
+package cn.dangao.dao.User;
 
-import cn.dangao.model.User;
+import cn.dangao.entity.User;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
