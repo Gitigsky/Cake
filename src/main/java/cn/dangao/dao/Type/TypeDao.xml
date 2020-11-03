@@ -25,5 +25,4 @@
     <delete id="delete" parameterType="cn.dangao.dao.Type">
         delete from type where id = #{id}
     </delete>
-
 </mapper>
