@@ -2,12 +2,20 @@ package cn.dangao.service;
 
 import cn.dangao.dao.Type.TypeDao;
 import cn.dangao.entity.Type;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.sql.SQLException;
 import java.util.List;
 
+@Service
 public class TypeService {
-    TypeDao tDao=new TypeDao();
+
+    @Resource
+   private TypeDao tDao;
+
+    //TypeDao tDao=new TypeDao();
+
     public List<Type> GetAllType()
     {
         List<Type> list=null;
