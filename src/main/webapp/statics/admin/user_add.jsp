@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+<%@ page language="java" contentType="text/html; charset=utf-8" isELIgnored="false"
 		 pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -14,12 +14,12 @@
 
 
 
-	<jsp:include page="/statics/admin/header.jsp"></jsp:include>
+	<jsp:include page="/userAdd.html"></jsp:include>
 	<c:if test="${!empty failMsg }">
 		<div class="alert alert-danger">${failMsg }</div>
 	</c:if>
 	<br><br>
-	<form class="form-horizontal" action="/statics/admin/user_add" method="post">
+	<form class="form-horizontal" action="/userAdd.html" method="post">
 		<div class="form-group">
 			<label for="input_name" class="col-sm-1 control-label">用户名</label>
 			<div class="col-sm-6">

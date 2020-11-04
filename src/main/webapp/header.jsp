@@ -51,12 +51,12 @@
                     <li><a href="/goodsrecommend_list?type=3" <c:if test="${param.flag==3 && t==3}">class="active"</c:if>>新品</a></li>
 
                     <c:choose><c:when test="${empty user }">
-                        <li><a href="/user_register.jsp" <c:if test="${param.flag==10 }">class="active"</c:if>>注册</a></li>
-                        <li><a href="/user_login.jsp" <c:if test="${param.flag==9 }">class="active"</c:if>>登录</a></li>
+                        <li><a href="/register.html" <c:if test="${param.flag==10 }">class="active"</c:if>>注册</a></li>
+                        <li><a href="/login.html" <c:if test="${param.flag==9 }">class="active"</c:if>>登录</a></li>
                     </c:when><c:otherwise>
                         <li><a href="/order_list" <c:if test="${param.flag==5 }">class="active"</c:if>>我的订单</a></li>
-                        <li><a href="/user_center.jsp" <c:if test="${param.flag==4 }">class="active"</c:if>>个人中心</a></li>
-                        <li><a href="/user_logout" >退出</a></li>
+                        <li><a href="/enter.html" <c:if test="${param.flag==4 }">class="active"</c:if>>个人中心</a></li>
+                        <li><a href="/loginOut.html" >退出</a></li>
                     </c:otherwise>
                     </c:choose>
 

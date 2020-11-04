@@ -3,18 +3,23 @@ package cn.dangao.service;
 import cn.dangao.dao.User.UserDao;
 import cn.dangao.entity.Page;
 import cn.dangao.entity.User;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.sql.SQLException;
 import java.util.List;
 
+@Service
 public class UserService {
-    private UserDao uDao = new UserDao();
+    @Resource
+    private UserDao uDao;
+
     public boolean register(User user) {
         try {
-            if(uDao.isUsernameExist(user.getUsername())) {
+            if(uDao.equals(user.getUsername())){
                 return false;
             }
-            if(uDao.isEmailExist(user.getEmail())) {
+            if(uDao.equals(user.getEmail())) {
                 return false;
             }
             uDao.addUser(user);
