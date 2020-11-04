@@ -12,7 +12,7 @@ public class Test01 {
     ApplicationContext context =new ClassPathXmlApplicationContext("springconfig.xml");
     @Test
     public void  test(){
-        Goods goodsService = context.getBean("goodsService", GoodsService.class).getGoodsById(2);
-        System.out.println(goodsService.getId());
+        Goods goodsService = context.getBean("goodsService", GoodsService.class).getGoodsById(12);
+        System.out.println(goodsService);
     }
 }
